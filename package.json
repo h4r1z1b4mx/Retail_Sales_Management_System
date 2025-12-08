@@ -1,0 +1,27 @@
+{
+  "name": "retail-sales-management-system",
+  "version": "1.0.0",
+  "description": "A comprehensive retail sales management system with advanced search, filtering, and sorting",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev"
+  },
+  "keywords": [
+    "retail",
+    "sales",
+    "management"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
+    "concurrently": "^8.2.2"
+  }
+}
